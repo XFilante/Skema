@@ -1,5 +1,11 @@
 # @xfilante/package-template
 
+## 0.0.1
+
+### Patch Changes
+
+- First version of skema
+
 ## 0.0.4
 
 ### Patch Changes
