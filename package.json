@@ -1,5 +1,5 @@
 {
-  "name": "@xfilante/skema",
+  "name": "@filante/skema",
   "description": "Skema is a type-safe client generator for Filante framework.",
   "version": "0.0.1",
   "engines": {
@@ -12,10 +12,7 @@
     "!build/tests"
   ],
   "exports": {
-    ".": {
-      "types": "./index.ts",
-      "default": "./build/index.js"
-    }
+    ".": "./build/index.js"
   },
   "homepage": "https://github.com/XFilante/Skema#readme",
   "repository": "https://github.com/XFilante/Skema.git",
@@ -70,8 +67,7 @@
   "keywords": [],
   "prettier": "@adonisjs/prettier-config",
   "publishConfig": {
-    "access": "restricted",
-    "registry": "https://npm.pkg.github.com/"
+    "access": "public"
   },
   "c8": {
     "exclude": [
