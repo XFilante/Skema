@@ -254,7 +254,7 @@ export default class SkemaGenerate extends BaseCommand {
 
       writer.newLine()
 
-      writer.writeLine(`import { InferController, register } from '@xtriangle/skema'`)
+      writer.writeLine(`import { InferController, register } from '@filante/skema'`)
 
       writer.newLine()
 

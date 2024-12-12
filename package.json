@@ -1,7 +1,7 @@
 {
   "name": "@filante/skema",
   "description": "Skema is a type-safe client generator for Filante framework.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "node": ">=20.6.0"
   },
@@ -12,7 +12,8 @@
     "!build/tests"
   ],
   "exports": {
-    ".": "./build/index.js"
+    ".": "./build/index.js",
+    "./commands": "./build/commands/main.js"
   },
   "homepage": "https://github.com/XFilante/Skema#readme",
   "repository": "https://github.com/XFilante/Skema.git",
