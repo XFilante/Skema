@@ -1,7 +1,7 @@
 {
   "name": "@filante/skema",
   "description": "Skema is a type-safe client generator for Filante framework.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "node": ">=20.6.0"
   },

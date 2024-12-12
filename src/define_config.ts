@@ -1,7 +1,7 @@
 import { InvalidArgumentsException } from '@adonisjs/core/exceptions'
-import type { FinesConfig } from './types.js'
+import type { SkemaConfig } from './types.js'
 
-export function defineConfig(config: FinesConfig) {
+export function defineConfig(config: SkemaConfig) {
   const groupsLength = Object.keys(config.groups).length
 
   if (groupsLength > 0) {

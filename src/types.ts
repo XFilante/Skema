@@ -97,6 +97,6 @@ export type InferController<
   >
 }
 
-export type FinesConfig = {
+export type SkemaConfig = {
   groups: Record<string, string>
 }

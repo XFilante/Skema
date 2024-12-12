@@ -9,7 +9,7 @@ import stringHelpers from '@adonisjs/core/helpers/string'
 import { dirname, relative } from 'node:path'
 import { x } from 'tinyexec'
 import { RuntimeException } from '@adonisjs/core/exceptions'
-import { FinesConfig } from '../src/types.js'
+import { SkemaConfig } from '../src/types.js'
 
 type Space = ('start' | 'end')[]
 
@@ -51,11 +51,11 @@ export default class SkemaGenerate extends BaseCommand {
   }
 
   #config = () => {
-    const rawConfig = this.app.config.get<FinesConfig | null>('fines', null)
+    const rawConfig = this.app.config.get<SkemaConfig | null>('skema', null)
 
     if (!rawConfig) {
       throw new RuntimeException(
-        'Invalid "config/fines.ts" file. Make sure you are using the "defineConfig" method'
+        'Invalid "config/skema.ts" file. Make sure you are using the "defineConfig" method'
       )
     }
 
