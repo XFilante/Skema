@@ -1,7 +1,7 @@
 {
   "name": "@filante/skema",
   "description": "Skema is a type-safe client generator for Filante framework.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "engines": {
     "node": ">=20.6.0"
   },
@@ -12,8 +12,7 @@
     "!build/tests"
   ],
   "exports": {
-    ".": "./build/index.js",
-    "./commands": "./build/commands/main.js"
+    ".": "./build/index.js"
   },
   "homepage": "https://github.com/XFilante/Skema#readme",
   "repository": "https://github.com/XFilante/Skema.git",
@@ -25,7 +24,7 @@
     "quick:test": "node --import=./tsnode.esm.js --enable-source-maps bin/test.ts",
     "test": "c8 nr quick:test",
     "prebuild": "nr clean",
-    "build": "tsc && adonis-kit index build/commands",
+    "build": "tsc",
     "changelog": "na changeset",
     "release:version": "changeset version",
     "release": "nr release:version && changeset publish",
@@ -75,9 +74,5 @@
       "tests/**"
     ]
   },
-  "packageManager": "pnpm@9.14.2+sha512.6e2baf77d06b9362294152c851c4f278ede37ab1eba3a55fda317a4a17b209f4dbb973fb250a77abc463a341fcb1f17f17cfa24091c4eb319cda0d9b84278387",
-  "dependencies": {
-    "tinyexec": "^0.3.1",
-    "ts-morph": "^24.0.0"
-  }
+  "packageManager": "pnpm@9.14.2+sha512.6e2baf77d06b9362294152c851c4f278ede37ab1eba3a55fda317a4a17b209f4dbb973fb250a77abc463a341fcb1f17f17cfa24091c4eb319cda0d9b84278387"
 }

@@ -96,7 +96,3 @@ export type InferController<
       : never
   >
 }
-
-export type SkemaConfig = {
-  groups: Record<string, string>
-}
